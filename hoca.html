@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hồ cá </title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: url('anhho.webp') no-repeat center center fixed;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+        }
+
+        .fish {
+            position: absolute;
+            width: 200px; 
+            animation: swim 10s infinite linear;
+        }
+
+    
+        @keyframes swim {
+            100% {
+                transform: translateX(+100%);
+            }
+            0% {
+                transform: translateX(100vw);
+            }
+        }
+
+        /* Cá thứ 1 */
+        .fish-1 {
+            top: 30%;
+            left: -100px;
+            animation-duration: 8s; /* Thời gian bơi */
+        }
+
+        /* Cá thứ 2 */
+        .fish-2 {
+            top: 60%;
+            left: -100px;
+            animation-duration: 12s;
+        }
+
+        /* Cá thứ 3 */
+        .fish-3 {
+            top: 50%;
+            left: -100px;
+            animation-duration: 15s;
+        }
+        
+        
+        .fish-4 {
+            top: 80%;
+            left: +100px;
+            animation-duration: 20s;
+            top: 50%;
+            left: +100px;
+            animation-duration: 20s;
+        }
+
+        
+        .fish-6 {
+            top: 70%;
+            left: +100px;
+            animation-duration: 15s;
+        }
+        .bot-1{
+            top: -100%;
+            left: +100%;
+        }
+    </style>
+</head>
+<body>
+    <img src="ca1.gif" class="fish fish-1" alt="Cá 1">
+    <img src="cadep1.gif" class="fish fish-2" alt="Cá 2">
+    <img src="cadep2.gif" class="fish fish-3" alt="Cá 3">
+    <img src="ca1.gif" class="fish fish-4" alt="Cá 4">
+    <img src="cadep1.gif" class="fish fish-5" alt="Cá 5">
+    <img src="cadep2.gif" class="fish fish-6" alt="Cá 6">
+    <img src="botnuoc.gif" class="bot bot-1" alt="Cá 6">
+</body>
+</html>
